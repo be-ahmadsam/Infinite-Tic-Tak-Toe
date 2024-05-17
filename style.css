@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: bisque;
+}
+nav{
+    height: 60px;
+    width: 100%;
+    background-color:rgb(240, 139, 102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav h2{
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 27px;
+}
+.gameContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    /* height: 100px; to be removed */
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw); 
+    grid-template-columns: repeat(3, 10vw);
+    margin-right: 2vw;
+
+}
+.gridContainer .box span{
+    color: coral;
+    
+}
+.gridContainer .nextToRemove span{
+    color: rgba(195, 0, 0, 0.156);
+}
+
+.infoContainer{
+    max-width: 37vw;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(240, 139, 102);
+    color: antiquewhite;
+    margin-left: 2vw;
+    font-family: 'Baloo Bhaina 2', cursive;
+    display: flex;
+    flex-direction: column;
+
+}
+.infoContainer .btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.infoContainer .btn button{
+    border: 1.5px solid transparent ;
+    border-radius: 10px;
+    height: 3vw;
+    width: 9vw;
+    min-width: 50px; 
+    min-height: 20px;
+    background-color: antiquewhite;
+}
+
+.infoContainer .btn button:hover {
+    background-color: rgb(243, 206, 155); /* Change background color on hover */
+}
+
+.infoContainer .btn button:active {
+    background-color: burlywood; /* Change background color on click */
+    transform: scale(0.95);
+}
+.infoContainer .turn{
+    color: antiquewhite;
+    margin-top: .5vw;
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+}
+.infoContainer .turn .info{
+    font-size:1.5vw;
+}
+.infoContainer .btn{
+    margin-top: 1.5vw;
+}
+.infoContainer h2 {
+    color: antiquewhite;
+    margin-top: .5vw;
+    font-size: 2vw; /* Set font size relative to viewport width */
+}
+
+
+
+
+.box{
+    border: .15vw solid coral;
+    background-color:transparent ;
+    border-radius: 30%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px; 
+    min-height: 36px;
+}
+.box:hover{
+    background-color:rgb(243, 206, 155);
+}
+.box:active {
+    background-color: burlywood;
+    transform: scale(0.95); /* Scale down the box when clicked */
+}
+
+.darker{
+    background-color: burlywood;
+}
+
+
+.box .boxtext{
+    font-size: 4vw;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .imgBox img {
+        margin-left: px;
+    }
+    .infoContainer h2{
+        font-size: small;
+    }
+    .infoContainer .info{
+        font-size: small;
+    }
+}
+@media screen and (max-width: 450px) {
+    .gridContainer{
+        margin-top: 3vw;
+    }
+
+    .imgBox img{
+        margin-left: 20px;
+    }
+    .imgBox .description{
+        font-size: 8px;
+    }
+}
+.disabled {
+    pointer-events: none;
+}
+
+
+.imgBox{
+    max-width: 17vw;
+    font-size: .9vw;
+}
+.imgBox .description{
+    padding: 0 .1vw 0 0.8vw;
+    margin-top: 5vh;
+    /* display: none; */
+}
+.imgBox img{
+    display: none;
+    margin-top: 3vh;
+    max-width: 15vw;
+    min-width: 15vw;
+}
+
+
+
+
