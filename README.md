@@ -1,5 +1,4 @@
 # Infinite-Tic-Tak-Toe
-Sure, here's a simple README file template for a Tic-Tac-Toe 2.0 game repository on GitHub:
 
 ---
 
